@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 80px;
+    background: #e6f0fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.sidebar li {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sidebar a {
+    color: #0078d7;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.2s, background 0.2s;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+.sidebar a.active, .sidebar a:hover {
+    background: #fff;
+    color: #0078d7;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.libro-main {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #f4f4f4;
+}
+.libro-main h1 {
+    font-size: 3rem;
+    color: #0078d7;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+#cursosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.curso-card {
+    background: linear-gradient(135deg, #e6f0fa 0%, #fff 100%);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(0,120,215,0.13);
+    padding: 2.5rem 3rem;
+    min-width: 260px;
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 8px solid #0078d7;
+}
+.curso-card:hover {
+    box-shadow: 0 12px 36px rgba(0,120,215,0.18);
+    transform: translateY(-6px) scale(1.04);
+    background: linear-gradient(135deg, #d0e7ff 0%, #fff 100%);
+}
+.curso-card h2 {
+    margin: 0 0 1rem 0;
+    color: #0078d7;
+    font-size: 2rem;
+}
+.curso-card p {
+    margin: 0;
+    color: #444;
+    font-size: 1.1rem;
+}
+#libroInfo {
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background: #e6f0fa;
+    color: #0078d7;
+}

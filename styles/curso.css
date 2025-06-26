@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 80px;
+    background: #e6f0fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+header.topbar, .topbar {
+    position: fixed;
+    left: 80px;
+    top: 0;
+    width: calc(100% - 80px);
+    background: #0078d7;
+    padding: 18px 0 12px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    z-index: 9;
+}
+.secciones {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-left: 3.5rem;
+}
+.seccion {
+    background: #fff;
+    color: #0078d7;
+    padding: 8px 28px;
+    border-radius: 18px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,120,215,0.10);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.seccion.active, .seccion:hover {
+    background: #0078d7;
+    color: #fff;
+}
+.curso-main {
+    flex: 1;
+    padding: 100px 40px 40px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #f4f4f4;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+#cursoInfo {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    padding: 2rem 2.5rem;
+    min-width: 320px;
+    margin-bottom: 2rem;
+}
+#cursoInfo h2 {
+    margin: 0 0 1rem 0;
+    color: #0078d7;
+}
+#cursoInfo p {
+    margin: 0.5rem 0;
+    color: #444;
+}
+#asistencias {
+    margin-top: 2rem;
+    width: 100%;
+}
+.asistencia-calendario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    background: #fafdff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,120,215,0.07);
+    padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    justify-content: flex-start;
+    min-width: 320px;
+    max-width: 520px;
+    margin-bottom: 1.2rem;
+    border: 1.5px solid #e6f0fa;
+    position: relative;
+    animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.asistencia-dia {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.2s, box-shadow 0.2s, transform 0.15s;
+    background: #b0c4de;
+    box-shadow: 0 1px 4px rgba(0,120,215,0.08);
+    margin-bottom: 0.2rem;
+}
+.asistencia-dia.selected {
+    border: 2px solid #0078d7;
+    box-shadow: 0 2px 8px rgba(0,120,215,0.18);
+    transform: scale(1.08);
+}
+.asistencia-dia:hover {
+    border: 2px solid #0078d7;
+    background: #e6f0fa;
+    color: #0078d7;
+}
+.asistio {
+    background: #4caf50 !important;
+}
+.tarde {
+    background: #ff9800 !important;
+}
+.falto {
+    background: #e53935 !important;
+}
+.asistencia-label {
+    font-size: 0.95rem;
+    color: #0078d7;
+    margin-top: 0.7rem;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.asistencia-controles {
+    display: flex;
+    gap: 0.7rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+    justify-content: flex-start;
+}
+.btn-asistencia {
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0,120,215,0.10);
+    transition: background 0.2s, transform 0.15s;
+    font-weight: 500;
+}
+.btn-asistencia:hover {
+    background: #005fa3;
+    transform: scale(1.07);
+}
+/* Cabecera de mes para el calendario */
+.calendario-header {
+    width: 100%;
+    text-align: left;
+    font-size: 1.15rem;
+    color: #0078d7;
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.5px;
+}
+#cursosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.curso-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    padding: 2rem 2.5rem;
+    min-width: 220px;
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.curso-card:hover {
+    box-shadow: 0 8px 32px rgba(0,120,215,0.18);
+    transform: translateY(-4px) scale(1.03);
+}
+.curso-card h2 {
+    margin: 0 0 1rem 0;
+    color: #0078d7;
+}
+.curso-card p {
+    margin: 0;
+    color: #444;
+}
+.sidebar {
+    width: 80px;
+    background: #e6f0fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.sidebar li {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sidebar a {
+    color: #0078d7;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.2s, background 0.2s;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+.sidebar a.active, .sidebar a:hover {
+    background: #fff;
+    color: #0078d7;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.tabla-notas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    overflow: hidden;
+}
+.tabla-notas th, .tabla-notas td {
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+.tabla-notas th {
+    background: #e6f0fa;
+    color: #0078d7;
+    font-weight: bold;
+}
+.tabla-notas tr:last-child td {
+    border-bottom: none;
+}
+.tabla-notas input[type='number'] {
+    width: 60px;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #b0c4de;
+    font-size: 1rem;
+    text-align: center;
+}
+.btn-guardar {
+    margin-top: 1.5rem;
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,120,215,0.10);
+    transition: background 0.2s;
+}
+.btn-guardar:hover {
+    background: #005fa3;
+}
+.titulo-curso {
+    background: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 0 2rem 0;
+    color: #0078d7;
+    font-size: 2.2rem;
+    font-weight: bold;
+    display: block;
+}

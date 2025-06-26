@@ -1,0 +1,82 @@
+[
+  {
+    "usuario": "estudiante",
+    "contrasena": "1234",
+    "nombres": "Juan",
+    "apellidos": "Pérez",
+    "DNI": "12345678",
+    "codigo": "20250001",
+    "rango": "estudiante"
+  },
+  {
+    "usuario": "estudiante2",
+    "contrasena": "5678",
+    "nombres": "María",
+    "apellidos": "Ramírez",
+    "DNI": "23456789",
+    "codigo": "20250002",
+    "rango": "estudiante"
+  },
+  {
+    "usuario": "estudiante3",
+    "contrasena": "abcd",
+    "nombres": "Pedro",
+    "apellidos": "Sánchez",
+    "DNI": "34567890",
+    "codigo": "20250003",
+    "rango": "estudiante"
+  },
+  {
+    "usuario": "estudiante4",
+    "contrasena": "efgh",
+    "nombres": "Lucía",
+    "apellidos": "Torres",
+    "DNI": "45678901",
+    "codigo": "20250004",
+    "rango": "estudiante"
+  },
+  {
+    "usuario": "estudiante5",
+    "contrasena": "ijkl",
+    "nombres": "Diego",
+    "apellidos": "Morales",
+    "DNI": "56789012",
+    "codigo": "20250005",
+    "rango": "estudiante"
+  },
+  {
+    "usuario": "estudiante6",
+    "contrasena": "mnop",
+    "nombres": "Sofía",
+    "apellidos": "Vega",
+    "DNI": "67890123",
+    "codigo": "20250006",
+    "rango": "estudiante"
+  },
+  {
+    "usuario": "estudiante7",
+    "contrasena": "qrst",
+    "nombres": "Mateo",
+    "apellidos": "Castro",
+    "DNI": "78901234",
+    "codigo": "20250007",
+    "rango": "estudiante"
+  },
+  {
+    "usuario": "profesor",
+    "contrasena": "abcd",
+    "nombres": "Ana",
+    "apellidos": "García",
+    "DNI": "87654321",
+    "codigo": "PRF1001",
+    "rango": "profesor"
+  },
+  {
+    "usuario": "admin",
+    "contrasena": "admin",
+    "nombres": "Carlos",
+    "apellidos": "López",
+    "DNI": "11223344",
+    "rango": "administrador"
+  }
+]

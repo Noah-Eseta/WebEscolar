@@ -1,0 +1,17 @@
+[
+  {
+    "usuario": "estudiante",
+    "calificaciones": [
+      {"curso": "Matemáticas", "nota": 16, "asistencias": "95%"},
+      {"curso": "Lengua", "nota": 14, "asistencias": "90%"},
+      {"curso": "Ciencias", "nota": 18, "asistencias": "98%"}
+    ]
+  },
+  {
+    "usuario": "profesor",
+    "cursos": [
+      {"curso": "Matemáticas", "estudiantes": 30},
+      {"curso": "Ciencias", "estudiantes": 28}
+    ]
+  }
+]

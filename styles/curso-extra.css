@@ -1,0 +1,64 @@
+/* Estilo para el contenedor del selector de estudiante */
+.select-estudiante-container {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 2.2rem; /* Más separación con lo siguiente */
+    margin-top: 0.5rem;
+    font-size: 1.08rem;
+    font-weight: 500;
+    color: #0078d7;
+}
+
+.select-estudiante-container label {
+    font-weight: 700;
+    color: #0078d7;
+    letter-spacing: 0.2px;
+    font-size: 1.08rem;
+}
+
+.select-estudiante-container select {
+    padding: 7px 18px;
+    border-radius: 8px;
+    border: 2px solid #0078d7;
+    font-size: 1rem;
+    background: #e6f0fa;
+    color: #005fa3;
+    transition: border 0.2s, box-shadow 0.2s;
+    outline: none;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(0,120,215,0.08);
+}
+.select-estudiante-container select:focus {
+    border: 2px solid #005fa3;
+    box-shadow: 0 0 0 2px #b0c4de;
+}
+
+/* Estilo para el título de asistencias */
+.asistencias-titulo {
+    font-size: 1.28rem;
+    font-weight: bold;
+    color: #0078d7;
+    margin-top: 2rem;
+    margin-bottom: 1.1rem;
+    letter-spacing: 0.2px;
+    padding-left: 2px;
+}
+
+.titulo-notas {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #0078d7;
+    margin-bottom: 1.1rem;
+    margin-top: 0.2rem;
+    letter-spacing: 0.2px;
+    padding-left: 2px;
+}
+
+.asistencias-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+    margin-top: 2rem;
+}

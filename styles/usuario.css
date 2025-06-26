@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 80px;
+    background: #e6f0fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.sidebar li {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sidebar a {
+    color: #0078d7;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.2s, background 0.2s;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+.sidebar a.active, .sidebar a:hover {
+    background: #fff;
+    color: #0078d7;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.user-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+.user-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 350px;
+}
+.user-icon {
+    width: 110px;
+    height: 110px;
+    background: #e6f0fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #0078d7;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.user-info {
+    font-size: 1.2rem;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+.user-info strong {
+    color: #0078d7;
+}
