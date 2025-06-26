@@ -1,0 +1,69 @@
+[
+  {
+    "id": "MAT",
+    "nombre": "Matemáticas",
+    "profesor": "profesor",
+    "estudiantes": [
+      {
+        "usuario": "estudiante",
+        "calificaciones": {
+          "semestre1": 15,
+          "semestre2": 17
+        },
+        "asistencias": [
+          {"fecha": "2025-06-01", "estado": "asistio"},
+          {"fecha": "2025-06-02", "estado": "tarde"},
+          {"fecha": "2025-06-03", "estado": "falto"}
+        ]
+      },
+      {
+        "usuario": "estudiante2",
+        "calificaciones": {
+          "semestre1": 14,
+          "semestre2": 16
+        },
+        "asistencias": []
+      },
+      {
+        "usuario": "estudiante3",
+        "calificaciones": {
+          "semestre1": 13,
+          "semestre2": 15
+        },
+        "asistencias": []
+      },
+      {
+        "usuario": "estudiante4",
+        "calificaciones": {
+          "semestre1": 16,
+          "semestre2": 18
+        },
+        "asistencias": []
+      },
+      {
+        "usuario": "estudiante5",
+        "calificaciones": {
+          "semestre1": 12,
+          "semestre2": 14
+        },
+        "asistencias": []
+      },
+      {
+        "usuario": "estudiante6",
+        "calificaciones": {
+          "semestre1": 17,
+          "semestre2": 19
+        },
+        "asistencias": []
+      },
+      {
+        "usuario": "estudiante7",
+        "calificaciones": {
+          "semestre1": 11,
+          "semestre2": 13
+        },
+        "asistencias": []
+      }
+    ]
+  }
+]
